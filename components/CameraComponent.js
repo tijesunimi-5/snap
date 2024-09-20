@@ -101,7 +101,7 @@ const CameraComponent = () => {
   return (
     <div>
       {error && <p>{error}</p>}
-      <video ref={videoRef} autoPlay playsInline style={{ width: "100%" }} />
+      <video ref={videoRef}  playsInline style={{ width: "100%" }} />
       <button onClick={takePhoto} className="mr-10">
         Take Photo
       </button>
