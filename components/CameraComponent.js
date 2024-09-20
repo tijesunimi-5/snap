@@ -15,10 +15,11 @@ const CameraComponent = () => {
 
   useEffect(() => {
     const videoConstraints = {
-      width: { ideal: 1280 }, // Adjust resolution width (ideal or exact value)
-      height: { ideal: 720 }, // Adjust resolution height (ideal or exact value)
-      frameRate: { ideal: 30 }, // Adjust frame rate for smoother video
+      width: { ideal: 640 },
+      height: { ideal: 480 },
+      aspectRatio: 1.777777778, // 16:9 aspect ratio
     };
+
 
     //Request access to the camera
     navigator.mediaDevices
